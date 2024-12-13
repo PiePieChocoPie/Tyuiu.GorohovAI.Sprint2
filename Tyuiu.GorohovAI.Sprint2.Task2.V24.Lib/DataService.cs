@@ -15,11 +15,11 @@ namespace Tyuiu.GorohovAI.Sprint2.Task2.V24.Lib
 
             if (isInShadedArea)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
         }
     }
