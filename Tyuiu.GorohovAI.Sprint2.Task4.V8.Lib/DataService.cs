@@ -10,11 +10,11 @@ namespace Tyuiu.GorohovAI.Sprint2.Task4.V8.Lib
             double z = 0;
             if (x * 2 > y + 15)
             {
-                z = Math.Pow((5 + (Math.Pow(y + 5, 1 / 2) / Math.Pow(x, 3))), x) +2;
+                z = Math.Pow((5 + (Math.Pow(y + 5, 1 / 2) / Math.Pow(x, 3))), x);
             }
             else
             {
-                z = 2 * x * x + 2 * x - (4 + 6 / y * y);
+                z = 2 * Math.Pow(x,2) + 2 * x - (4 + (6/Math.Pow(y,2)));
             }
             return z;
         }
