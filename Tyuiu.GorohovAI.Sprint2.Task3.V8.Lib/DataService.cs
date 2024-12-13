@@ -6,26 +6,22 @@ namespace Tyuiu.GorohovAI.Sprint2.Task3.V8.Lib
     {
         public double Calculate(double x)
         {
-            double y;
+            double y =0;
             if (x > 0)
             {
-                y = Math.Sin(x) + Math.Cos(x);
+                y = (Math.Sin(x) + Math.Cos(x))/ (Math.Cos(x) - Math.Sin(x));
             }
             else if (x == 0)
             {
-                y = Math.Pow(x, 2) - Math.Cos(Math.Pow(x, 2)) + 10;
+                y = (Math.Pow(x, 2) - Math.Cos(Math.Pow(x, 2)) + 10) / (Math.Pow(x, 2) - Math.Sin(Math.Pow(x, 2)) + 12);
             }
             else if (x > -12 && x < 0)
             {
-                y = Math.Pow(x, 2) - Math.Sin(Math.Pow(x, 2)) + 12 / x;
+                y = Math.Pow((1 + (1/Math.Pow(x,2))),x);
             }
-            else if (x <= -12)
+            else if(x < -12)
             {
                 y = x + 10 * x - (5 / x);
-            }
-            else
-            {
-                y = 1 + (3 / Math.Pow(x, 2));
             }
 
             // Округление до трёх знаков
