@@ -11,7 +11,7 @@ namespace Tyuiu.GorohovAI.Sprint2.Task5.V3.Lib
             switch (dayNumber)
             {
                 case 1:
-                    dayName = "Понедельник";
+                    dayName = "понедельник";
                     break;
                 case 2:
                     dayName = "Вторник";
